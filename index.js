@@ -1,12 +1,16 @@
 'use strict'
 
 //create an array store for data (shopping list items and other attributes) 
-const store = [
-    {id: cuid(), name:'apples', checked: false},
-    {id: cuid(), name:'oranges', checked: false},
-    {id: cuid(), name:'milk', checked: true},
-    {id: cuid(), name:'bread', checked: false}
-];
+//fore more complex UI issues - convert into an object containing arrays
+//hideComplete: false -- this represents that the checkbox should be in an unchecked state.
+const store = {
+    items:[
+        {id: cuid(), name:'apples', checked: false},
+        {id: cuid(), name:'oranges', checked: false},
+        {id: cuid(), name:'milk', checked: true},
+        {id: cuid(), name:'bread', checked: false}],
+    hideCompleted: false 
+};
 
 ////\\\\creation of function stubs with pseudocode////\\\\
 
